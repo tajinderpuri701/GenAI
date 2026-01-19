@@ -1,0 +1,208 @@
+#1 
+for i in range(1,50):
+    if i%3==0 and i%5==0
+    print("fizzbuzz")
+elif i%3==0:
+print("fizz")
+elif i%5==0:
+print("buzz")
+else:
+print(i)
+
+#3
+score=int(input("what is your score?"))
+if score>=90 and score<=100:
+    print("grade A")
+    if score>=80 and score<=89:
+        print("grade B")
+        if score>=70 and score<=79:
+            print("grade C")
+            if score>=60 and score<=69:
+                print("grade D")
+                if score<=60:
+                    print("grade F")
+#4
+score=int(input("what is your desired n0."))
+for i in range(11):
+    print(f"{score}x{i}={score*i}")
+
+ #5
+list_of_squares=[]                       
+for i in range(1,21):
+if i%2==0:
+    list_of_square.append(i**2)
+    print(list_of_squares)
+    #6
+    year=int(input("give the year u want to check?"))
+    if year%4==0 and year%100!=0:
+        print("leap year")
+        if year%400==0:
+            print("leap year")
+#7
+side_triangle1=int(input("give the length of the first side?"))
+side_triangle2=int(input("give the length of the second side?"))
+side_triangle3=int(input("give the length of third side?"))
+if side_triangle1==side_triangle2 and side_triangle3==side_triangle2:
+    print("equilateral triangle")
+elif side_triangle1==side_triangle2 or side_traingle3==side_triangle2 or side_triangle3==side_triangle1:
+    print("scalene triangle")
+#8
+integer_input=int(input("give the number you want to check?"))    
+if integer_input>0:
+    print("positive")
+elif integer_input<0:
+    print("negative")
+else:
+    print("zero")
+    #10
+    weight=float(input("what is your weight(in kgs)?"))
+height=float(input("what is your height?(in m)"))
+bmi=weight/height**2
+if bmi<18.5:
+    print("underweight")
+elif 18.5<=bmi<24.9:
+    print("overweight")
+elif bmi>=30:
+    print("obesity")
+    #11
+    weekday_input=int(input("type a number to determine the weekday"))
+rem=weekday_input%7
+if rem==0:
+    print("sunday")
+elif rem==1:
+    print("monday")
+elif rem==2:
+    print("tuesday")
+elif rem==3:
+    print("wednesday")
+elif rem==4:
+    print("thursday")
+elif rem==5:
+    print("friday")
+elif rem==6:
+    print("saturday")
+    #12
+    price = float(input("enter price?$"))
+    if price >= 1000:
+        print("you can recieve 10% discount!")
+    elif price<1000 and price >= 500:
+        print("you can recieve 5% discount")
+    else:
+        print("sorry no discount")
+#13
+desired_number=int(input("give the number till you want to get the sum"))
+total=(desired_number+1)*desired_number
+print(f"the required sum is{total/2}")
+
+#15
+vowels=["a","e","i","u","o"]
+vowel_count=0
+given_string="hi wie geht es bei dir? ich bin gut!"
+for x in given_string:
+    if x in vowels:
+        vowel_count+=1
+        print(f"the total number of vowels are:{vowel_count}")
+        #16
+        given_number=int(input("enter any number:"))
+        given_number=str(given_number)
+        sum=0
+        for x in given_number:
+            x=int(x)
+            sum+=x
+            print(sum)
+            #17
+            pattern_input=int(input("enter n for pattern of stars:"))
+            decrement=pattern_input
+            for i in range(pattern_input):
+                print("*"*(pattern_input-(decrement-1)))
+                decrement-=1
+#18
+import random
+random_num=random.randint(a:1, b:100)
+tries=5
+while tries!=0
+guess_number = int(input("what is your guess?"))
+if random_num>guess_number:
+    print("too low")
+    tries-=1
+    print(f"tries left :{tries}")
+elif random_num<guess_number:
+    print("too high")
+tries -= 1
+print(f"tries left :{tries}")
+else:
+print("correct guess")
+#19
+req_number=int(input("enter any number:"))
+for i in range(1,req_number):
+    if i%2==0:
+        print(i)
+#20
+number_list=[23,25,25,23,524,33,3,24,45,34]
+if 25 in number_list:
+    print("25 exists in number list")
+print(f"the length if list is {len(number_list)}")
+number_25=0
+for x in number_list:
+    if x==25:
+        number_25+=1
+        print(f"total occurrence of 25 in the list is {number_25}")
+        print("all ements in list include")
+for x in number_list:
+    print(x)
+    print('all the even numbers in the list area:')
+for x in number_list:
+    if x%2==0:
+        print(x)
+        #21 
+        user_string=input("enter a string of min 10 words and max 19 words:")
+print(user_string)
+print(f"the length of string is {len(user_string)}")
+reverse_string=user_string[::-1]
+if reverse_string==user_string:
+    print("the given string is palindrome")
+else:
+    print("the string is not palindrome")
+    if len(user_string)%2==0:
+        middle_word=int(len(user_string)/2)
+    else:
+        middle_word = int((len(user_string)-1)/2)
+print(f"the middle word in string is {user_string[middle_word]}")
+print(f"the second last word in string is {user_string[-2]}")
+#22
+calc=int(input("welcome to calci:\n1. power\n2. sum\n3. subn4. multiply\n"))
+def sum():
+    num_1=int(input(f"enter the first number to add"))
+    num_2=int(input(f"enter the second number to add"))
+    addition=num_1+num_2
+    return addition
+def power():
+    num_1 = int(input(f"enter the first number for base"))
+    num_2 = int(input(f"enter the second number for power"))
+    pow = num_1 ** num_2
+    return pow
+def sub():
+    num_1 = int(input(f"enter the first number to sub"))
+    num_2 = int(input(f"enter the second number to sub"))
+    subt = num_1 - num_2
+    return subt
+def multiply():
+    num_1 = int(input(f"enter the first number to multiply"))
+    num_2 = int(input(f"enter the second number to multiply"))
+    multiply = num_1*num_2
+    return multi
+if calc==1:
+    print(f"the sum is {sum()}")
+elif calc==2:
+    print(f"the power is{power() }")
+elif calc ==3:
+    print(f"the differnce is{sub()}")
+elif calc==4:
+    print(f"the multiplication is {multiply()}")
+#23
+x=['abc','xyz','aba','1221','buch','kuhlschrank','fenster','abracadabra','bb']
+count=0
+for i in x:
+    if len(i)>2 and i[0]==i[-1]:
+        count+=1
+        print(count)
